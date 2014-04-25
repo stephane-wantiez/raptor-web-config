@@ -1,4 +1,4 @@
-cours-web-editor
-================
+raptor-web-config
+=================
 
-Editeur de configuration dans DB. Propose une interface web générique pour modifier des valeurs de config dans un jeu.
+Editeur de configuration pour le jeu "1942: Mission Raptor".
