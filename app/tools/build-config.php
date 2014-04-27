@@ -13,7 +13,7 @@ if(!isset($argv[1])){
 	$output = fopen(PROJECT_PATH.'app/config.php', 'w');
 	fwrite($output, '<?php');
 
-	$fileList = [];
+	$fileList = array();
 
 	while($file = readdir($dir)){
 		if($file != '.' && $file != '..'){

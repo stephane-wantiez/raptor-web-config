@@ -39,7 +39,7 @@ abstract class ReportingDataBinder extends DataBinder {
     	}
     	
     	if($from == $to){
-    		return [];
+    		return array();
     	}
     	
     	$data = $this->getPeriodData($forExport, $from, $to, $fromTime, $toTime, $month);

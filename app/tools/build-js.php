@@ -7,7 +7,7 @@ define('PROJECT_PATH', __DIR__.'/../../');
 
 function browseDir($path, &$fileList){
 	$dir = opendir($path);
-	$tmpFileList = [];
+	$tmpFileList = array();
 	while($file = readdir($dir)){
 		if($file != '.' && $file != '..'){
 			$tmpFileList[] = $path.$file;
@@ -27,7 +27,7 @@ function browseDir($path, &$fileList){
 }
 
 $path = PROJECT_PATH.'web-static-src/js/';
-$fileList = [];
+$fileList = array();
 browseDir($path, $fileList);
 
 $output = fopen(PROJECT_PATH.'web-static/js/script.js', 'w');
