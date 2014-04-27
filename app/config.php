@@ -41,18 +41,18 @@ if(isset($_REQUEST['SID'])){
 }
 session_start();
 
-/******* D:\GitHub\raptor-web-config/app/config/dev/10-database.php *******/
+/******* D:\GitHub\raptor-web-config/app/config/prod/10-database.php *******/
 
 
-define('DB_DRIVER', 'mysql');
-define('DB_HOST', 'localhost');
-define('DB_NAME','raptor-web');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_DRIVER','mysql');
+define('DB_HOST','localhost');
+define('DB_NAME','swantiez_raptor_web');
+define('DB_USER','swantiez_test');
+define('DB_PASS','QmuI2A75lovf');
 
 define('DB_DSN', DB_DRIVER.':host='.DB_HOST.';dbname='.DB_NAME);
 
 
-/******* D:\GitHub\raptor-web-config/app/config/dev/10-uri.php *******/
+/******* D:\GitHub\raptor-web-config/app/config/prod/10-uri.php *******/
 
-define('WEB_STATIC_URI', '/raptor-web-config-static/');
+define('WEB_STATIC_URI', '/raptor-web-config/raptor-web-config-static/');
