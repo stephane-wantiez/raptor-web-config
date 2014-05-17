@@ -6,7 +6,7 @@ var configPage = {
 		{name: 'name', label: 'Name'},
 		{name: 'identifier', label: 'Identifier'},
 		{name: 'value', label: 'Value'},
-		{name: 'type', label: 'Type'}
+		{name: 'type_name', label: 'Type'}
 	],
 	formTabs: [
 		{name: 'properties', label: 'Properties', fields: [
@@ -17,7 +17,7 @@ var configPage = {
 		]}
 	],
 	filters: [
-		{field: 'config_type', label: 'Type', table: 'config_type'}
+		{field: 'type', label: 'Type', table: 'config_type'}
 	]
 };
 

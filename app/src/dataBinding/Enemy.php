@@ -9,7 +9,7 @@ class Enemy extends DataBinder{
 	public function getData(){
 		$where = $this->buildWhereClause('enemy', 'e');
 		
-		$data = $this->getDB()->select('e.*, et.name type, et.boss boss, l.name level
+		$data = $this->getDB()->select('e.*, et.name type_name, et.id type, et.boss boss, l.name level_name, l.id level
 			FROM enemy e
 			LEFT JOIN enemy_type et ON et.id=e.type
 			LEFT JOIN level l ON l.id=e.level

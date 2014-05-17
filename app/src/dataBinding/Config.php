@@ -9,7 +9,7 @@ class Config extends DataBinder{
 	public function getData(){
 		$where = $this->buildWhereClause('config', 'c');
 		
-		$data = $this->getDB()->select('c.*, ct.name type
+		$data = $this->getDB()->select('c.*, ct.name type_name, ct.id type
 			FROM config c
 			LEFT JOIN config_type ct ON ct.id=c.type
 			WHERE '.$where);		
@@ -22,7 +22,7 @@ class Config extends DataBinder{
 		$data->addString('name', $_POST['name']);
 		$data->addString('identifier', $_POST['identifier']);
 		$data->addRef('type', $_POST['type']);
-		$data->addDouble('value', $_POST['value']);
+		$data->addString('value', $_POST['value']);
 		
 		if($id){
 			$this->getDB()->update($data, 'id=?', $id);

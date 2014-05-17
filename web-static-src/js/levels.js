@@ -36,7 +36,7 @@ var enemyTypePage = {
 			]}
 		],
 		filters: [
-		  	{field: 'boss', label: 'Boss', table: 'enemy_type'}
+		  	{field: 'id', label: 'Boss', table: 'enemy_type_boss'}
 		]
 	};
 
@@ -45,8 +45,8 @@ var enemyPage = {
 		label: 'Enemies',
 		fields: [
 			{name: 'id', label: 'Id'},
-			{name: 'level', label: 'Level'},
-			{name: 'type', label: 'Type'},
+			{name: 'level_name', label: 'Level'},
+			{name: 'type_name', label: 'Type'},
 			{name: 'boss', label: 'Boss'},
 			{name: 'pos_x', label: 'Pos on map (X)'},
 			{name: 'pos_y', label: 'Pos on map (Y)'}
@@ -61,8 +61,8 @@ var enemyPage = {
 		],
 		filters: [
 		  	{field: 'level', label: 'Level', table: 'level'},
-			{field: 'type', label: 'Type', table: 'enemy_type'},
-			{field: 'type', label: 'Type (Boss)', table: 'enemy_type_boss'}
+			{field: 'type', label: 'Type (all)', table: 'enemy_type'},
+			{field: 'type', label: 'Type (boss only)', table: 'enemy_type_boss'}
 		]
 	};
 
